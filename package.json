@@ -14,13 +14,15 @@
     "publish": ["github"],
     "win": {
       "target": "nsis",
-      "icon": "icon.ico"
-    },
-  "nsis": {
-    "oneClick": false,
-    "allowToChangeInstallationDirectory": true,
-    "runAfterFinish": true,
-    "requestElevation": true 
+      "icon": "icon.ico",
+      "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true,
+        "deleteAppDataOnUninstall": true,
+        "perMachine": true,
+        "runAfterFinish": true,
+        "requestElevation": true
+      }
     }
   },
   "devDependencies": {
