@@ -5,6 +5,7 @@ function createWindow () {
     width: 1280,
     height: 720,
     title: "Watch Party",
+    icon: __dirname + '/icon.ico',
     autoHideMenuBar: true, 
     webPreferences: {
       nodeIntegration: false,
