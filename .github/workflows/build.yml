@@ -24,7 +24,6 @@ jobs:
       - name: Build and Publish Application
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - name: Build Application
         run: npm run build -- --publish always
 
       - name: Upload EXE
