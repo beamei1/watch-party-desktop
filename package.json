@@ -16,9 +16,11 @@
       "target": "nsis",
       "icon": "icon.ico"
     },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "runAfterFinish": true,
+    "requestElevation": true 
     }
   },
   "devDependencies": {
