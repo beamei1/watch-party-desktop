@@ -1,16 +1,24 @@
 {
   "name": "watch-party-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "main.js",
   "scripts": {
     "build": "electron-builder --win"
   },
+  "dependencies": {
+    "electron-updater": "^6.1.8"
+  },
   "build": {
     "appId": "com.watchparty.app",
     "productName": "Watch Party",
+    "publish": ["github"],
     "win": {
-      "target": "portable"
+      "target": "nsis",
       "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
     }
   },
   "devDependencies": {
