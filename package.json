@@ -10,6 +10,7 @@
     "productName": "Watch Party",
     "win": {
       "target": "portable"
+      "icon": "icon.ico"
     }
   },
   "devDependencies": {
