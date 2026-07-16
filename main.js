@@ -19,7 +19,7 @@ function createWindow () {
     else callback(false);
   });
 
-  win.loadURL('https://YOUR-PROJECT-NAME.vercel.app');
+  win.loadURL('https://bpdow.vercel.app');
 
   // 🔥 สั่งให้เช็คอัปเดตเมื่อเปิดหน้าต่างเสร็จ
   win.webContents.once('did-finish-load', () => {
