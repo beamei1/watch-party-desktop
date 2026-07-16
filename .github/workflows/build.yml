@@ -24,4 +24,11 @@ jobs:
       - name: Build and Publish Application
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        - name: Build Application
         run: npm run build -- --publish always
+
+      - name: Upload EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: WatchParty-App
+          path: dist/*.exe
