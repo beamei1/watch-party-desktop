@@ -23,8 +23,7 @@
       "allowToChangeInstallationDirectory": true,
       "deleteAppDataOnUninstall": true,
       "perMachine": true,
-      "runAfterFinish": true,
-      "requestElevation": true
+      "runAfterFinish": true
     }
   },
   "devDependencies": {
